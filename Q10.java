@@ -6,9 +6,11 @@
   
 // Base Class
 class Parent {
+  int age;
+  int roll;
   void show()
   {
-      System.out.println("First value is = 20");
+      System.out.println("Age displayed in superclass :"+age);
   }
 }
 
@@ -18,7 +20,7 @@ class Child extends Parent {
   @Override
   void show()
   {
-      System.out.println("Second value is =40");
+      System.out.println("Roll displayed in subclass:"+roll);
   }
 }
 
@@ -27,9 +29,11 @@ class Q10 {
   public static void main(String[] args)
   {
       Parent obj1 = new Parent();
+      obj1.age= 21;
       obj1.show();
 
       Parent obj2 = new Child();
+      obj2.roll=200607;
       obj2.show();
   }
 }
